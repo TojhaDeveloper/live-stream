@@ -1,0 +1,57 @@
+.container {
+  display: flex;
+  gap: 5px;
+  background-color: #E7E9EB;
+  border: 1px solid #E7E9EB;
+  height:40px;
+  align-items: center;
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+}
+.container:active {
+    outline:1px solid blue;
+}
+.info {
+    width: 120px;
+    text-align: center;
+    font-weight: 600;
+    opacity: 0.4;
+}
+
+.caret {
+  border: 0.4em solid transparent;
+  border-top-color: #777;
+  translate: 0 25%;
+  margin-right: 0.2em;
+}
+.options {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    border: 0.05em dashed #777;
+    border-radius: 0.25em;
+    list-style: none;
+    max-height: 15em;
+    overflow-y: auto;
+    left: 0;
+    width: 100%;
+    top: calc(100% + 0.25em);
+    background-color: white;
+    z-index: 100;
+    display: none;
+}
+.options.show {
+    display: block;
+}
+
+.option {
+    padding: 0.25em 0.5em;
+    cursor: pointer;
+}
+.option.highlighted {
+    color: white;
+    background-color: hsl(200, 100%, 50%);
+}
+
+
